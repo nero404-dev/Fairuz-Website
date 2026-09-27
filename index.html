@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Fairuz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/fairuz_pic_rounded.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+    
+    <div class="body" id="content" style="display:none;">
+        <!-- your site content (sidenav, etc.) -->
+        <div class="landing">
+            <header class="header" id="hero">
+                <nav>
+                    <div class="nav">
+                        <div class="col col-1">
+                            <div class="logo">
+                                <a href="#" data-target="hero" title="Home"><img src="pictures/fairuz_pic_rounded.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col col-2 resp">
+                            <div class="dashes">
+                                <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                                <div class="mob-menu-btn-wrap flex">
+                                    <a class="mob-menu-btn" onclick="openNav()">
+                                        <div class="hamburger">
+                                            <span class="hamburger-line hamburger-line-top"></span>
+                                            <span class="hamburger-line hamburger-line-middle"></span>
+                                            <span class="hamburger-line hamburger-line-bottom"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-2 desktop">
+                            <!-- <a href="#" data-target="hero">Home</a> -->
+                            <a href="#" data-target="story">Story</a>
+                            <a href="#" data-target="gallery">Gallery</a>
+                            <a href="#" data-target="legacy">Legacy</a>
+                            <a href="#" data-target="music">Music</a>
+                            <a href="#" data-target="inquiries-form">Inquiries</a>
+                            <a href="#" data-target="contact">Contact</a>
+
+                            <div class="theme-mode">
+                                <input value="private" name="input" id="input" type="checkbox" class="input">
+                                <label for="input">
+                                    <span class="input-x-unchecked">
+                                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="input-x-checked">
+                                        <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="intro">
+                    <div class="in-intro">
+                        <div class="title">
+                            <h2>Fairuz<img src="pictures/Lebanese Flag.png" alt="Lebanese Flag" title="Lebanese Flag - Lebanon"></h2>
+                            <!-- <h1>The Global Icon That Entered History of Music</h1> -->
+                            <!-- <h1>The Voice That Defined Generations</h1> -->
+                            <h1>The Voice That Defined Generations — A Global Icon Who Shaped Music History</h1>
+                            <div class="btns">
+                                <div class="btn-1">
+                                    <a href="music.html"><button>Listen Music</button></a>
+                                </div>
+                                <div class="btn-2">
+                                    <a href="#" data-target="story">Her Story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+            <div class="sidenav-links">
+                <!-- <a href="#" data-target="hero">Home</a> -->
+                <a href="#" data-target="story">Story</a>
+                <a href="#" data-target="gallery">Gallery</a>
+                <a href="#" data-target="legacy">Legacy</a>
+                <a href="#" data-target="music">Music</a>
+                <a href="#" data-target="inquiries-form">Inquiries</a>
+                <a href="#" data-target="contact">Contact</a>
+            </div>
+
+            <div class="separator">
+                <hr class="line">
+                <img src="pictures/fairuz_pic_rounded.png" alt="Separator Image" class="separator-image">
+                <hr class="line">
+            </div>
+
+            <div class="theme-mode">
+                <input value="private" name="input" id="input" type="checkbox" class="input">
+                <label for="input">
+                    <span class="input-x-unchecked">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="input-x-checked">
+                        <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+    
+        <main>
+
+            <!-- <div class="wa-note">
+                <a class="whatsapp-float" href="https://l.instagram.com/?u=https%3A%2F%2Fchat.whatsapp.com%2FGKHFGPRCoEtFPXQQxCtJTW%3Fmode%3Dgi_t%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnd3oCUXxu1c0r3nZQIro9IkUd1y5F4Um0HGixJcQyeDs9d4Tel8Xd1sm_bpc_aem_CTRruvU1s-nN6atJr5rtZw&e=AT4r74vpR2nOzt_BVgmjpnvlgONkwlKb9FEJPUVLjEkDoT40YoXF1O35Fc7k3VCag13_BiE57lfXl1ZqQ15lXN216v5AwEr9j_go8uZs4w" target="_blank" title="Chat on WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i>Chat</a>
+            </div> -->
+
+            <section class="story" id="story">
+                <div class="in-section">
+                    <div class="content">
+                        <div class="intro">
+                            <h3 class="sub-title">Fairuz</h3>
+                            <h1 class="title">Brief Story Of The Moon's Neighbor</h1>
+    
+                            <div class="text">
+                                <p><b>Fairuz</b> is a Legendary Lebanese singer, born Nouhad Wadie' Haddad on <u>November 20, 1934</u>, in <b>Beirut</b>. She is widely celebrated as a <b>cultural icon</b> and a timeless symbol of unity in Lebanon and the Arab world. She is also the mother of the Legend Artist <a href="https://en.wikipedia.org/wiki/Ziad_Rahbani">Ziad Rahbani</a>.</p>
+                                
+                                <p>Early Life and Rise to Fame</p>
+
+                                <ul>
+                                    <li>Began as a teenager in the Lebanese national radio station's chorus in the <u>late 1940s</u>.</li>
+                                    <li>Gained major fame with her <b>1952 hit song "Itab"</b>.</li>
+                                    <li>Rose to prominence alongside the <a href="https://en.wikipedia.org/wiki/Rahbani_brothers">Rahbani Brothers</a>, collaborating closely with her late husband <b>Assi Rahbani</b> and his brother Mansour.</li>
+                                    <li>Performed her <u>first major live show in 1957</u> at the Baalbeck International Festival.</li>
+                                </ul>
+
+                                <p>Musical Legacy and Achievements</p>
+
+                                <ul>
+                                    <li>Recorded nearly <u>1,500 songs</u> and released over 80 albums.</li>
+                                    <li>Sold more than 150 million records worldwide, making her one of the top-selling Middle Eastern artists.</li>
+                                    <li>Headlined famous global venues including Carnegie Hall in New York and Royal Albert Hall in London.</li>
+                                    <li>Known by affectionate titles like "<b>The Voice of Lebanon</b>", "Our Ambassador to the Stars" and "The Moon's Neighbor".</li>
+                                </ul>
+
+                                <p class="section-note">The Lebanese - International Icon<img src="pictures/Lebanese Flag.png" alt="Lebanese Flag" title="Lebanese Flag - Lebanon"></p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <a href="pictures/fairuz_hq_profile_image.jpeg" target="_blank"><img src="pictures/fairuz_hq_profile_image_halftone.jpg" alt="Image"></a>
+                        </div>
+                    </div>
+                    <div class="link-container">
+                        <div class="link">
+                            <a href="https://en.wikipedia.org/wiki/Fairuz"><span title="For more....."><i class="fa fa-wikipedia-w" aria-hidden="true"></i> ~ Wikipedia</span><div class="arrow-icon arrow-right"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-iframe">
+                <iframe id="wikiFrame" src="https://en.wikipedia.org/wiki/Fairuz?vectornightmode=0&VectorCustomFontSize=0" frameborder="0"></iframe>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <div class="in-section">
+                    <h3 class="sub-title">Fairuz</h3>
+                    <h1 class="title">Gallery - Some Iconic Moments of The Star</h1>
+                    <div class="cats">
+                        <div class="cat">
+                            <div class="image"><a href="gallery/pack_one/0C6LSyT158OsMSbK-g3F3lguyvy2Zi8jEwO1fx-ygJfOizgB_OaYXWh1RRTC2xQn3yeaMTmDZtQJsyPRYdtBRvt6FG1ik9wbpKpkgD1lYC-bRECicTJ77COnCHYh_hWa3LVI0KJgqlgSTqGFX6zs3SDPohgmwNjsUGdwft6bLlCgWtQb4PwfEqhpmevMODWX.jpeg" target="_blank"><img src="gallery/pack_one/0C6LSyT158OsMSbK-g3F3lguyvy2Zi8jEwO1fx-ygJfOizgB_OaYXWh1RRTC2xQn3yeaMTmDZtQJsyPRYdtBRvt6FG1ik9wbpKpkgD1lYC-bRECicTJ77COnCHYh_hWa3LVI0KJgqlgSTqGFX6zs3SDPohgmwNjsUGdwft6bLlCgWtQb4PwfEqhpmevMODWX.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/0Ru7kpUBgbqNCxdupoJwinEYkz1-HDrwBe5IHgAEXbqRuRyJKf6H9vxiUE9c8TWjfKUpi_rbZw_Y27mppHGvnU0v4Qe_4YXGou3A4NnXBkoVkucJYW53tie_TJvGp5gZpcP5ddwteSpwMFPMddzsls4QtRiZl-fvDQCF15QANz7PiFM01NsA8voD11eKiy2c.jpeg" target="_blank"><img src="gallery/pack_one/0Ru7kpUBgbqNCxdupoJwinEYkz1-HDrwBe5IHgAEXbqRuRyJKf6H9vxiUE9c8TWjfKUpi_rbZw_Y27mppHGvnU0v4Qe_4YXGou3A4NnXBkoVkucJYW53tie_TJvGp5gZpcP5ddwteSpwMFPMddzsls4QtRiZl-fvDQCF15QANz7PiFM01NsA8voD11eKiy2c.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/37LuGDKIydaUHiidJ_jjYqlTYuD0XIQmqgONyD3r0QR-ailNlHG3RdC4Yhw81EkSSxwMQUAQ9u57UPPx9nJTr8dMOPcUeAtKpGEI5lzPy5Y0hJq6MY_fk0Cn8-tiYInu_NvGGQp78TtncZXfE1VebbdTmeEnZlrvEV-ZSHYUA9GVJOA8stteGStbTm4iu9MM.jpeg" target="_blank"><img src="gallery/pack_one/37LuGDKIydaUHiidJ_jjYqlTYuD0XIQmqgONyD3r0QR-ailNlHG3RdC4Yhw81EkSSxwMQUAQ9u57UPPx9nJTr8dMOPcUeAtKpGEI5lzPy5Y0hJq6MY_fk0Cn8-tiYInu_NvGGQp78TtncZXfE1VebbdTmeEnZlrvEV-ZSHYUA9GVJOA8stteGStbTm4iu9MM.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/bP7pFcsbzavUgzAVxGgdafdGob6Z8os9E0UdpHezaxNy8HO37QvwTUYSU4egCUD_5xu-Lb07zVzcbWFqEnpQQZ3Jl-MuoU6_1CSMdcKEF4q8XylFIaWn0Krz9QV80842lU1AEDm9LADHeSGZY2M0PgqB3OlZ0R0nSfbkXd2QZ_4MRkcpn3-eJFCr5-otWeW6.jpeg" target="_blank"><img src="gallery/pack_one/bP7pFcsbzavUgzAVxGgdafdGob6Z8os9E0UdpHezaxNy8HO37QvwTUYSU4egCUD_5xu-Lb07zVzcbWFqEnpQQZ3Jl-MuoU6_1CSMdcKEF4q8XylFIaWn0Krz9QV80842lU1AEDm9LADHeSGZY2M0PgqB3OlZ0R0nSfbkXd2QZ_4MRkcpn3-eJFCr5-otWeW6.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/IoE2Tz64zWKN3jzJ_yE9hMfk9MIznD3eStSYx2gWE3-WFJYzYRiyYw1eVgLWTmECsupXY8siuOXEmwNbAnIB5qA7XZTBZjpR3Ox36K-GUVb5HPkBNEFJy-c65kBJmJpesW7vo62gSwr25ppnRe1ZZyclztobYDRFuK-nBgsLpc6FNGYXVSaSS4QAksexnfVZ.jpeg" target="_blank"><img src="gallery/pack_one/IoE2Tz64zWKN3jzJ_yE9hMfk9MIznD3eStSYx2gWE3-WFJYzYRiyYw1eVgLWTmECsupXY8siuOXEmwNbAnIB5qA7XZTBZjpR3Ox36K-GUVb5HPkBNEFJy-c65kBJmJpesW7vo62gSwr25ppnRe1ZZyclztobYDRFuK-nBgsLpc6FNGYXVSaSS4QAksexnfVZ.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/RuqLC7sr1jdQXiLdySfoFBUAR6CZxEO_M_p724T0gqe9wlo4rJFEo6wAre8EFRN6SJYzNqMdGjE5f8Ql4mcPpxou5YUUDVsh-cYTQZO3NXvjBnVXdkj4dn_UFPpwgJiLqGsAovUgH1W8M3OEuhpwoWHYSvT595WkJVjWhPO26VHHR9yco1wGqZGuvJVLBc-X.jpeg" target="_blank"><img src="gallery/pack_one/RuqLC7sr1jdQXiLdySfoFBUAR6CZxEO_M_p724T0gqe9wlo4rJFEo6wAre8EFRN6SJYzNqMdGjE5f8Ql4mcPpxou5YUUDVsh-cYTQZO3NXvjBnVXdkj4dn_UFPpwgJiLqGsAovUgH1W8M3OEuhpwoWHYSvT595WkJVjWhPO26VHHR9yco1wGqZGuvJVLBc-X.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/x1duSwpTS7Gt8UgxOfGDlhBBk472wMAmjhEn83IB2y8D-7aJM5-lbU81leApN3piBVKHRvMUuW1vPL8afc-F3DV_7gnuLBRvdageRONUIBcwkSOPmoW4pS_Eovh1qvVDK0hJy0NXEhroQs2vudtBQx1aBFANXA5ivV_lW1hd4GFQglWpwmaj4Aljn9rglp3f.jpeg" target="_blank"><img src="gallery/pack_one/x1duSwpTS7Gt8UgxOfGDlhBBk472wMAmjhEn83IB2y8D-7aJM5-lbU81leApN3piBVKHRvMUuW1vPL8afc-F3DV_7gnuLBRvdageRONUIBcwkSOPmoW4pS_Eovh1qvVDK0hJy0NXEhroQs2vudtBQx1aBFANXA5ivV_lW1hd4GFQglWpwmaj4Aljn9rglp3f.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_one/X8NuX1Ko8queckvKiMLSt_qbq6LYvMFklpspsT8pCxHIPlEF7by3lzKXSWDYBsUhitSmAAWZGBSgTGPMs9_Yc6PJB2pR-2ItZOOZZY30Xx4DyHhXU_Ozpp1Yt2kZgic8QYFRC8bJedLVQTwlueZopBRPzuX63F08kuspw5dTKxjK-Sl-s8xxixjM4Je1jHtD.jpeg" target="_blank"><img src="gallery/pack_one/X8NuX1Ko8queckvKiMLSt_qbq6LYvMFklpspsT8pCxHIPlEF7by3lzKXSWDYBsUhitSmAAWZGBSgTGPMs9_Yc6PJB2pR-2ItZOOZZY30Xx4DyHhXU_Ozpp1Yt2kZgic8QYFRC8bJedLVQTwlueZopBRPzuX63F08kuspw5dTKxjK-Sl-s8xxixjM4Je1jHtD.jpeg" alt=""></a></div>
+                        </div>
+                        <div class="cat hidden" id="moreImgs">
+                            <div class="image"><a href="gallery/pack_two/-c2_K1oHLzyeIGV-uu2fue5XuP9_ZAT__xoG3bxepjn9ai9IsQeF5uiL4za1BPaFGMWteMQnVhmCfGO7STvf-huOLevS2Qj-VWNbBU2TlNZDCmCIeJIFgQeWy9D7-PXNw-Cfl0Ws05APSSLbXHqqtB0bWTHdIHm5h4E_-T7s6AhUHRZ45_CQFcchcsHw0FSS.jpeg" target="_blank"><img src="gallery/pack_two/-c2_K1oHLzyeIGV-uu2fue5XuP9_ZAT__xoG3bxepjn9ai9IsQeF5uiL4za1BPaFGMWteMQnVhmCfGO7STvf-huOLevS2Qj-VWNbBU2TlNZDCmCIeJIFgQeWy9D7-PXNw-Cfl0Ws05APSSLbXHqqtB0bWTHdIHm5h4E_-T7s6AhUHRZ45_CQFcchcsHw0FSS.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_two/3CSnECwjYhNQySb3rgrH962XMNVE418w8hGtN-BlN1XBFqfzmWZm8TPCl9N5H2GgmX3vv-KPXF6hB5PwIVsmEPsHCdPZGUdkhQl30dhQl7TpNEQe45aRza9MOmF4ma4puJub8IfYuf_Q5X0ReoF3D8zDPrQ460zTCgUGRvD55Mk-QXcCcG8DGMvUarrW2edl.jpeg" target="_blank"><img src="gallery/pack_two/3CSnECwjYhNQySb3rgrH962XMNVE418w8hGtN-BlN1XBFqfzmWZm8TPCl9N5H2GgmX3vv-KPXF6hB5PwIVsmEPsHCdPZGUdkhQl30dhQl7TpNEQe45aRza9MOmF4ma4puJub8IfYuf_Q5X0ReoF3D8zDPrQ460zTCgUGRvD55Mk-QXcCcG8DGMvUarrW2edl.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_two/EjYe6WAQ-N1gNNi2eeqi5UAf7oaihrG_8TdeaoH_EqOvlRGs_q3gsI79FSfaKzc5UIrepfNEctOQ_k5K9ySB98jS-LZNFhDcp1lwSk2Cx87Z7if829De32a0ZklauuS1-UibNDwhwf423l6VvDwrgsOLpR6ZGssjws7tbX3t4Tykfjakn0uLF76Iz9dv0D2O.jpeg" target="_blank"><img src="gallery/pack_two/EjYe6WAQ-N1gNNi2eeqi5UAf7oaihrG_8TdeaoH_EqOvlRGs_q3gsI79FSfaKzc5UIrepfNEctOQ_k5K9ySB98jS-LZNFhDcp1lwSk2Cx87Z7if829De32a0ZklauuS1-UibNDwhwf423l6VvDwrgsOLpR6ZGssjws7tbX3t4Tykfjakn0uLF76Iz9dv0D2O.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_two/Rh8F_5wmhY31a4ScwbC1M-I1BeMY6Et-xitK2RHHVZYSm5HhXLf4_s5v5QswNETbLWI-cSyf_5b01zNqD9V65kFFbGf62P4W3C1SI7ika1zij0R5OueVKjrO9HnAAQ5vrKcgPzfDCRAu2aOB7H5d1K8TUGutn8yLA-AqnSINkBv4YPGe9b3EnbEWdwYOd_4L.jpeg" target="_blank"><img src="gallery/pack_two/Rh8F_5wmhY31a4ScwbC1M-I1BeMY6Et-xitK2RHHVZYSm5HhXLf4_s5v5QswNETbLWI-cSyf_5b01zNqD9V65kFFbGf62P4W3C1SI7ika1zij0R5OueVKjrO9HnAAQ5vrKcgPzfDCRAu2aOB7H5d1K8TUGutn8yLA-AqnSINkBv4YPGe9b3EnbEWdwYOd_4L.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_two/rVDxyl8PI0wI62EN5km8u-_2n18fK1dL9nDWarFwJr-tBHuE7EQZ_nZh5C6PjjpOuZTkUiNvrHhm8vHkRzZUgsCqsAa3Q5mT4vsi7EnwZx5j85XrLZqeubzU7zFXDkz5KG--Mc6_KwKoy208FdnNE4SHgzI-QaJUoSCHs5AIABNrMveowIwqzqL9hJz6UIfB.jpeg" target="_blank"><img src="gallery/pack_two/rVDxyl8PI0wI62EN5km8u-_2n18fK1dL9nDWarFwJr-tBHuE7EQZ_nZh5C6PjjpOuZTkUiNvrHhm8vHkRzZUgsCqsAa3Q5mT4vsi7EnwZx5j85XrLZqeubzU7zFXDkz5KG--Mc6_KwKoy208FdnNE4SHgzI-QaJUoSCHs5AIABNrMveowIwqzqL9hJz6UIfB.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_two/X58aB7-dM11LK3WugF_7T5AVCtwiLrs1AdiTOszeBKfrWcDFC672V_U5sIWf9e5a4DlF2Qo13NbDh0VL24m7D32vK9tafen3jmUn4IIGdboM_BGHxYDHrbTTGqqaQI1phyR6VXmnc6DmHi42GLB4h9Zff_mtIEVDcf_NUZNG9Bd3kgiFkPeTu8WEuIe-9ACe.jpeg" target="_blank"><img src="gallery/pack_two/X58aB7-dM11LK3WugF_7T5AVCtwiLrs1AdiTOszeBKfrWcDFC672V_U5sIWf9e5a4DlF2Qo13NbDh0VL24m7D32vK9tafen3jmUn4IIGdboM_BGHxYDHrbTTGqqaQI1phyR6VXmnc6DmHi42GLB4h9Zff_mtIEVDcf_NUZNG9Bd3kgiFkPeTu8WEuIe-9ACe.jpeg" alt=""></a></div>
+                            <div class="image"><a href="gallery/pack_two/YNaqt3yRYmdpBZcWe8D5LtxdhHiy0NtIeZ-ALKx92rsUkIgv_ENtJLQZmGBO6knTbpCmSN5gTSqC66_apZuzFobNPG5bAbIHtSr6s0m_1BGbaO1JCI97tvk1sHKbihc0phi_d-1aXTdluBnHbf8fHSPTcofHcaPC2EqaYxQ-Gh_O6a4Kr45M5GG1F-dMlJim.jpeg" target="_blank"><img src="gallery/pack_two/YNaqt3yRYmdpBZcWe8D5LtxdhHiy0NtIeZ-ALKx92rsUkIgv_ENtJLQZmGBO6knTbpCmSN5gTSqC66_apZuzFobNPG5bAbIHtSr6s0m_1BGbaO1JCI97tvk1sHKbihc0phi_d-1aXTdluBnHbf8fHSPTcofHcaPC2EqaYxQ-Gh_O6a4Kr45M5GG1F-dMlJim.jpeg" alt=""></a></div>
+                        </div>
+                        <button id="showMoreImgs">Show more/less</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="legacy" id="legacy">
+                <div class="in-section">
+                    <h3 class="sub-title">Fairuz</h3>
+                    <h1 class="title">Why Fairuz? The Unmatched Greatness</h1>
+                    <div class="cats">
+                        <div class="cat">
+                            <h2>A Voice Beyond Time</h2>
+                            <div class="text">
+                                <p>Fairuz possesses one of the most instantly recognizable voices in music history. Delicate yet powerful, her vocal style is defined by extraordinary clarity, emotional restraint, and effortless control. Rather than relying on dramatic ornamentation, she conveys profound emotion through simplicity, making her voice timeless and universally admired across generations.</p>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <h2>The Soundtrack of the Arab World</h2>
+                            <div class="text">
+                                <p>Few artists have become as deeply woven into the daily lives of millions as Fairuz. Her songs accompany mornings, family gatherings, road trips, and national celebrations throughout the Arab world. More than entertainment, her music has become a cultural ritual and a shared memory connecting generations across different countries.</p>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <h2>A Symbol Above Politics</h2>
+                            <div class="text">
+                                <p>Despite living through decades of political turmoil and regional conflict, Fairuz maintained an image that transcended political divisions. Her music united people of different religions, backgrounds, and nationalities, allowing her to become a rare symbol of unity, peace, and cultural identity rather than controversy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                        <div class="cat">
+                            <h2>Poetry Turned Into Music</h2>
+                            <div class="text">
+                                <p>Fairuz elevated Arabic poetry through song like few artists before or after her. Working with legendary composers and lyricists, she transformed literary works into emotionally rich musical experiences. Her repertoire introduced audiences to sophisticated poetry while making it accessible through unforgettable melodies.</p>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <h2>Artistic Elegance and Mystery</h2>
+                            <div class="text">
+                                <p>Unlike many performers who built their careers on constant public appearances, Fairuz became legendary through discretion and dignity. She rarely gave interviews, avoided publicity, and let her work speak for itself. This quiet presence created an enduring sense of elegance and mystery that only strengthened her iconic status.</p>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <h2>A Legacy That Defines an Era</h2>
+                            <div class="text">
+                                <p>Fairuz is more than a celebrated singer—she represents an entire cultural era. Her influence extends beyond music into literature, theater, national identity, and Arab heritage. Decades after the beginning of her career, her recordings continue to inspire artists and listeners alike, securing a legacy unmatched by almost any other artist in the Arab world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="music" id="music">
+                <div class="in-section">
+                    <h3 class="sub-title">Fairuz</h3>
+                    <h1 class="title">Music | Listen And Feel Every Beat</h1>
+
+                    <div class="background"></div>
+                    
+                    <div class="player">
+                    
+                        <div class="cover">
+                            <img src="" alt="Cover Image">
+                        </div>
+                    
+                        <div class="info">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                    
+                        <div class="progress-area">
+                    
+                            <div class="progress">
+                                <span></span>
+                            </div>
+                    
+                            <div class="time">
+                                <span id="current">0:00</span>
+                                <span></span>
+                            </div>
+                    
+                        </div>
+                    
+                        <div class="controls">
+                    
+                            <button>
+                                <i class="fa fa-step-backward"></i>
+                            </button>
+                    
+                            <button id="play">
+                                <i class="fa fa-play"></i>
+                            </button>
+                    
+                            <button>
+                                <i class="fa fa-step-forward"></i>
+                            </button>
+                    
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="page-btn">
+                    <a href="music.html"><button>Listen More<i class="fa fa-angle-right" aria-hidden="true"></i></button></a>
+                </div>
+
+                <audio id="audio"></audio>
+            </section>
+
+            <section id="inquiries-form">
+                <div class="in-section">
+                    <h3 class="sub-title">Fairuz</h3>
+                    <h1 class="title">Feel Free To Get In Touch | Reach Us For Inquiries</h1>
+                    <form id="inquiriesForm">
+                        <div class="row">
+                            <div class="col">
+                                <label>* First Name</label>
+                                <div class="input">
+                                    <input id="firstName" type="text" placeholder="Enter your first name.." title="Required" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>* Last Name</label>
+                                <div class="input">
+                                    <input id="lastName" type="text" placeholder="Enter your last name.." title="Required" required>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col">
+                                <label>* Phone Number</label>
+                                <div class="input">
+                                    <input id="phone" type="tel" placeholder="Enter your phone number.." title="Required" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Email Address</label>
+                                <div class="input">
+                                    <input id="email" type="email" placeholder="Enter your email address.." title="Optional">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-3">
+                            <!-- <div class="col">
+                                <input type="reset" value="Reset your form">
+                            </div> -->
+                            <div class="col">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="review">
+                <div class="review-form">
+            
+                    <h3>Give A Rate: </h3>
+                    
+                    <div class="stars">
+                        <span data-rate="1">★</span>
+                        <span data-rate="2">★</span>
+                        <span data-rate="3">★</span>
+                        <span data-rate="4">★</span>
+                        <span data-rate="5">★</span>
+                    </div>
+            
+                    <div class="input">
+                        <input type="text" id="name" placeholder="Your full name">
+                    </div>
+            
+                    <div class="select">
+                        <select id="type">
+                            <option value="review">Review</option>
+                            <option value="question">Request</option>
+                        </select>
+                    </div>
+            
+                    <div class="textarea">
+                        <textarea id="message" cols="30" rows="5" placeholder="Write here..."></textarea>
+                    </div>
+            
+                    <button id="submitReview">
+                        Submit
+                    </button>
+            
+                </div>
+            
+            
+                <div id="reviewsContainer"></div>
+            </section>
+        </main>
+    
+        <footer id="contact">
+            <div class="footer">
+                <div class="row row-2">
+                    <div class="col col-1">
+                        <h3>Fairuz</h3>
+                        <p>Fairuz's website celebrates the timeless legacy of one of the Arab world's most iconic voices, showcasing her extraordinary musical journey, unforgettable performances, and enduring cultural impact. Visitors can explore her life, artistic achievements, and a curated collection of works that continue to inspire generations across the globe.</p>
+                        <div class="social-media">
+                            <a href="https://instagram.com/nero404_dev/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.github.com/nero404-dev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/message/HHOQLBUZYZHGL1/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/nero-dev-nero404/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col col-3">
+                        <h3>Navigation</h3>
+                        <a href="#" data-target="hero">Home</a>
+                        <a href="#" data-target="story">Story</a>
+                        <a href="#" data-target="gallery">Gallery</a>
+                        <a href="#" data-target="legacy">Legacy</a>
+                        <a href="#" data-target="music">Music</a>
+                        <a href="#" data-target="inquiries-form">Inquiries</a>
+                    </div>
+                    <div class="col col-4">
+                        <h3>General Contact Info</h3>
+                        <a href="mailto:nero404.developer@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> General Email: <br>nero404.developer@gmail.com</a>
+                        <a href="tel:+96176134251"><i class="fa fa-phone" aria-hidden="true"></i> General Phone: <br>+961 76 134 251</a>
+                    </div>
+                </div>
+                <div class="separator">
+                    <hr class="line line-1">
+                    <img src="pictures/fairuz_pic_rounded.png" alt="Separator Image" class="separator-logo">
+                    <hr class="line line-2">
+                </div>
+                <div class="row row-3">
+                    <div class="col col-1">
+                        <p>&copy; 2026 • Fairuz | All Rights Reserved.</p>
+                    </div>
+                    <div class="col col-2">
+                        <p>Designed & Developed By <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
